@@ -70,7 +70,7 @@ const MeetingTypeList = () => {
 
           if(!values.description)
             {
-              router.push(`${process.env.NEXT_PUBLIC_URL}/meeting/${call.id}`);
+              router.push(`/meeting/${call.id}`);
               toast({title: " Creating a Meeting Call",description: new_date_time, action: (<ToastAction altText="Goto schedule to undo" onClick={()=>router.push('/')}>Go Back</ToastAction>),})
             }
             else{
