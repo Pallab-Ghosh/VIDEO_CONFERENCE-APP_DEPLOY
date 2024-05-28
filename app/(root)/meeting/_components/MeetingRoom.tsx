@@ -12,7 +12,7 @@ import { Loading } from '@/components/Loading'
 import { MyToggleTranscriptionButton } from './call-transcription'
 import { MyPermissionRequestNotifications } from './MyPermissionRequests'
 import CallRequest from './call-request'
-import { Transcription } from './Transcription';
+ 
 
 
 
