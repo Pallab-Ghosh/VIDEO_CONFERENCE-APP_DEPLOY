@@ -49,8 +49,8 @@ import React, { useEffect, useState } from 'react'
     return (
       <div className=' text-white '>
         {
-        permissionRequests.map((request) => (
-          <div>
+        permissionRequests.map((request ) => (
+          <div key={request.user.id}>
             New request from {request?.user?.name} to publish {request.permissions}
             <Button onClick={() => answerRequest('accept', request)} className=' bg-blue-800 focus:ring-0 ml-2 mr-2 cursor-pointer'>
               Accept

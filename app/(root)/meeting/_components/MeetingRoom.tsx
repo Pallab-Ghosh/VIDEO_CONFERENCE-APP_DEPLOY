@@ -71,7 +71,7 @@ const MeetingRoom = () => {
 
   return (
     <section className=' h-screen relative w-full overflow-hidden pt-4 text-white'>
-                 <MyPermissionRequestNotifications/>
+                 <PermissionRequests/>
                   
                  
               <div className='relative flex size-full items-center justify-center'>
