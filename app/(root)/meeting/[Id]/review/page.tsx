@@ -54,7 +54,7 @@ import { useRouter } from 'next/navigation';
 
   
   
-  }, [call, email, message, rating]);
+  }, [call, email, message, rating, toast, user]);
 
   return (
     <div className="text-white  h-screen  flex justify-center items-center w-full">
