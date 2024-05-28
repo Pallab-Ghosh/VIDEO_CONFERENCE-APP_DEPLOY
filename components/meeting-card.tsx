@@ -59,9 +59,7 @@ type MeetingCardProps = {
                       )) 
 
                     }
-                       <div className="flex-center absolute left-[136px] size-10 rounded-full border-[5px] border-dark-3 bg-dark-4">
-                        +5
-                      </div> 
+                       
               </div>
               
                 {
