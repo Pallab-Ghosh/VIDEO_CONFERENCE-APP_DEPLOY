@@ -8,7 +8,7 @@ import { SignedIn, UserButton } from '@clerk/nextjs'
 export const Navbar = () => {
   return (
  
-      <nav className='z-50 flex fixed w-full bg-dark-1 px-6 py-4 lg:px-10'>
+      <nav className='z-50 flex fixed w-full bg-dark-1 px-6 py-4 lg:px-10 justify-between items-center'>
           <Link className='flex items-center gap-1' href="/">
               <Image
               src='/icons/logo.svg'

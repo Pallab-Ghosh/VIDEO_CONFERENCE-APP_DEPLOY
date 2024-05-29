@@ -36,8 +36,8 @@ export const All_Routes =[
 export const Sidebar = () => {
 
   return (
-    <aside className='stick min-h-screen max-md:hidden lg:w-[264px] justify-start'>
-      <div className='mt-10 pt-10 flex flex-col gap-8 h-full'>
+    <aside className='sticky h-screen max-md:hidden lg:w-[264px] justify-start w-fit'>
+      <div className='mt-10 pt-10 flex flex-col gap-12 h-full'>
         {
            All_Routes.map((route)=>(
             <SidebarRoutes

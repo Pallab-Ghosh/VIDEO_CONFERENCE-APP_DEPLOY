@@ -32,7 +32,7 @@ const MeetingIdpage = ({params}:MeetingIdpageProps) => {
   
 
   return (
-    <main className='h-screen w-screen'>
+    <main className='h-screen w-full'>
          <StreamCall call={call} >
             <StreamTheme>
                {

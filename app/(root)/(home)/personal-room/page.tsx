@@ -30,7 +30,7 @@ const PersonalRoompage = () => {
 
   const MeetingId = user?.id ; 
 
-  const Link = `/meeting/${MeetingId}?personal=true`
+  const Link = `${process.env.NEXT_PUBLIC_URL}/meeting/${MeetingId}?personal=true`
 
   const client = useStreamVideoClient();
   const { toast } = useToast();
@@ -49,7 +49,7 @@ const PersonalRoompage = () => {
           await  NewCall.getOrCreate({ data: { starts_at: new Date().toISOString(), },})
         }
 
-        router.push(`${process.env.NEXT_PUBLIC_URL}/meeting/${MeetingId}?personal=true`)
+        router.push(`/meeting/${MeetingId}?personal=true`)
         
     }
 

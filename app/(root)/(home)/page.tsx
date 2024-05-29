@@ -19,9 +19,9 @@ const upcoming_meeting_time = upcomingCalls[0]?.state.startsAt?.toLocaleString()
  
 
   return (
-    <section className='flex size-full flex-col gap-12 2xl:gap-24 text-white mt-10 sm:mt-0'>
+    <section className='flex size-full flex-col gap-5 2xl:gap-24 text-white mt-10 sm:mt-0'>
 
-      <div className='h-[300px] w-full rounded-[20px] bg-slate-800 bg-cover flex flex-col  relative' >
+      <div className='h-[303px] w-full rounded-[20px] bg-slate-800 bg-cover flex flex-col  relative' >
              <div className='absolute top-8 sm:left-8 z-10  text-white flex flex-col  ml-4 max-md:py-8 lg:px-11 max-sm:mr-8'>
                   
                   <div className=' flex items-center justify-center sm:w-[300px] h-12  w-72  bg-slate-700 rounded-lg'>
