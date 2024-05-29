@@ -30,7 +30,7 @@ const PersonalRoompage = () => {
 
   const MeetingId = user?.id ; 
 
-  const Link = `${process.env.NEXT_PUBLIC_URL}/meeting/${MeetingId}?personal=true`
+  const Link = `/meeting/${MeetingId}?personal=true`
 
   const client = useStreamVideoClient();
   const { toast } = useToast();
