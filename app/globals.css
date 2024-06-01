@@ -139,7 +139,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 420px;
+    max-width: 420px;
     height: 425px;
   }
   

@@ -16,10 +16,10 @@ export function ImageSlider() {
                                     <Card className="bg-dark-2 border-dark-2">
                                         <CardContent className="flex aspect-square items-center justify-center">
                                           {
-                                             <div className=" flex flex-col items-center p-4 ">
+                                             <div className=" flex flex-col items-center p-4">
                                                  <Image src={data.img_src} height={348} width={348} alt="img"/>
                                                   <h2 className=" text-white mt-8 mb-4 text-2xl">{data.label}</h2>
-                                                  <p className=" text-white text-center">{data.description}</p>
+                                                  <p className=" text-white  text-wrap">{data.description}</p>
                                              </div>
                                           }
                                         </CardContent>
