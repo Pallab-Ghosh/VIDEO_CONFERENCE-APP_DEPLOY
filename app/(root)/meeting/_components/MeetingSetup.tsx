@@ -46,27 +46,28 @@ const MeetingSetup = ({setIsSetupComplete}:MeetingSetupProps) => {
    
   return (
     <div className='h-screen flex w-full flex-col items-center justify-center gap-3   text-white relative '>
+ 
+                        <div className=' mt-0 relative bg-slate-100 md:flex flex-col mb-10 h-[210px] lg:w-[540px] lg:mt-7  rounded-xl hidden'>
 
-                { !isMute && <h2 className=' text-white sm:text-2xl font-bold mb-6'>Meeting Preview</h2>}
-                       
-                        <div className=' ml-[1100px] bg-slate-100 md:flex flex-col mb-10 h-[280px] absolute w-[500px] rounded-xl hidden'>
-                            <h1 className=' text-2xl m-6 text-black font-bold'>Your meeting is ready</h1>
-                              <p className=' text-center mt-2 mx-5 text-black'>
-                               Share this meeting link with others you want in the meeting
-                              </p> 
-                            <div className='flex gap-5 mt-5 items-center justify-center  bg-slate-300 mx-1 h-10 p-3'>
-                                 <div className='flex items-center justify-center text-black font-bold '>{`meeting/${id}`}</div>
-                                 <Copy height={24} color='black' width={24} onClick={()=>handleCreateMeeting(`${process.env.NEXT_PUBLIC_URL}/meeting/${id}`)}/>
+                          <div className=' flex flex-col justify-center'>
+                              <h1 className=' text-2xl m-4 text-black font-bold text-center'>Your meeting is ready</h1>
+                              <p className=' text-center mt-0 text-lg lg:text-sm mx-5 text-black'> Share this meeting link with others you want in the meeting  </p> 
+                          </div>
+                      
+                            <div className='flex gap-5 mt-5 items-center justify-center  bg-slate-300 mx-5 h-9 p-1'>
+                                 <div className='flex items-center justify-center  text-black font-bold  '>{`meeting/${id}`}</div>
+                                 <Copy height={24} color='black' width={24} className=' ml-9 cursor-pointer' onClick={()=>handleCreateMeeting(`${process.env.NEXT_PUBLIC_URL}/meeting/${id}`)}/>
                             </div>
-                               <p className=' mt-10 text-black mx-5 font-bold'>Joined as {userdata.user?.primaryEmailAddress?.emailAddress}</p>
+
+                               <p className=' mt-7 text-black mx-5 font-bold'>Joined as {userdata.user?.primaryEmailAddress?.emailAddress}</p>
                         </div>
 
-                          <VideoPreview DisabledVideoPreview={VideoOffPreview}  className=' mx-4'/>
+                          <VideoPreview DisabledVideoPreview={VideoOffPreview}  className=' mx-4 '/>
                           {
                             !isMute && (
-                                <div className=' absolute mt-52'>
+                                <div className=' absolute mt-96 '>
                               
-                                    <div className=' flex gap-5 mb-8'>
+                                    <div className=' flex gap-5 '>
                                       {
                                       isMute ? (
                                             <div className='flex items-center justify-center flex-col  bg-red-600 w-16 rounded-full h-14 '>
