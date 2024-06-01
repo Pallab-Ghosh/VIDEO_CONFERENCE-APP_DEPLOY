@@ -23,7 +23,7 @@ const VideoOffPreview = () => {
         
         <p className=' mb-32 text-white text-center text-lg font-bold'>No Preview Available</p>
 
-        <div className=' flex gap-5 mb-20'>
+        <div className=' flex gap-5 sm:mb-24 mb-20'>
           <div className='flex items-center justify-center flex-col  bg-red-600 w-16 rounded-full h-14 '>
                 <CameraOff  height={30} width={30} onClick={()=>call?.camera.enable()} /> 
             </div>

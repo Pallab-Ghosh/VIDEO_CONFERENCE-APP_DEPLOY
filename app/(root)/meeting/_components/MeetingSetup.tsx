@@ -45,7 +45,9 @@ const MeetingSetup = ({setIsSetupComplete}:MeetingSetupProps) => {
 
    
   return (
-    <div className='h-screen flex w-full flex-col items-center justify-center gap-3   text-white relative '>
+    <div className='h-screen flex w-screen flex-col items-center justify-center gap-3   text-white relative '>
+
+             
  
                         <div className=' mt-0 relative bg-slate-100 md:flex flex-col mb-10 h-[210px] lg:w-[540px] lg:mt-7  rounded-xl hidden'>
 
@@ -62,10 +64,10 @@ const MeetingSetup = ({setIsSetupComplete}:MeetingSetupProps) => {
                                <p className=' mt-7 text-black mx-5 font-bold'>Joined as {userdata.user?.primaryEmailAddress?.emailAddress}</p>
                         </div>
 
-                          <VideoPreview DisabledVideoPreview={VideoOffPreview}  className=' mx-4 '/>
+                          <VideoPreview DisabledVideoPreview={VideoOffPreview}/>
                           {
                             !isMute && (
-                                <div className=' absolute mt-96 '>
+                                <div className=' absolute md:mt-96 mt-24'>
                               
                                     <div className=' flex gap-5 '>
                                       {
@@ -102,7 +104,7 @@ const MeetingSetup = ({setIsSetupComplete}:MeetingSetupProps) => {
                   <DeviceSettings />
                </div>
  
-               <div className='flex flex-1 gap-5 mt-10 items-center justify-center bg-slate-300 mx-1  p-3 md:hidden opacity-70 absolute rounded-lg'>
+               <div className='flex flex-1 sm:hidden gap-5 mt-[600px] bg-red-300  ml-auto  w-full p-3 md:hidden opacity-70 absolute rounded-lg'>
                 <div className='flex items-center justify-center text-black font-bold truncate'>{`meeting/${id}`}</div>
                 <Copy height={24} color='black' width={24} onClick={()=>handleCreateMeeting(`${process.env.NEXT_PUBLIC_URL}/meeting/${id}`)}/>
               </div> 
