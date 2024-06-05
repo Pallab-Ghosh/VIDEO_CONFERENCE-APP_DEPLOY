@@ -64,7 +64,7 @@ const MeetingSetup = ({setIsSetupComplete}:MeetingSetupProps) => {
                                <p className=' mt-7 text-black mx-5 font-bold'>Joined as {userdata.user?.primaryEmailAddress?.emailAddress}</p>
                         </div>
 
-                          <VideoPreview DisabledVideoPreview={VideoOffPreview} className=' max-w-[425px]' />
+                          <VideoPreview DisabledVideoPreview={VideoOffPreview} className='max-w-[398px] sm:max-w-[420px]' />
                           {
                             !isMute && (
                                 <div className=' absolute md:mt-96 mt-24'>
